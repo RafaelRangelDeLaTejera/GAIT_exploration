@@ -1,9 +1,10 @@
 import React, {useEffect} from 'react';
-import GlobalNav from "../components/Global_Nav";
 import { Link } from "react-router-dom"
+import GlobalNav from "../components/Global_Nav";
 
 
-function Home() {
+const TextGenPage = () => {
+
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -11,9 +12,9 @@ function Home() {
     return (
         <div >
             <GlobalNav />
-            <h1>HomePage</h1>
+            <h1>Text Generation</h1>
         </div>
     );
 }
 
-export default Home;
+export default TextGenPage;
