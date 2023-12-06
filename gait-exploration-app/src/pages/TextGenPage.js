@@ -1,6 +1,10 @@
 import React, {useEffect} from 'react';
 import { Link } from "react-router-dom"
 import GlobalNav from "../components/Global_Nav";
+import ChatWidget from "../components/ChatWidget/ChatWidget";
+import TextGenHero from "../components/TextGenHero";
+import ChatPromptSection from "../components/ChatPromptSection";
+
 
 
 const TextGenPage = () => {
@@ -12,7 +16,13 @@ const TextGenPage = () => {
     return (
         <div >
             <GlobalNav />
-            <h1>Text Generation</h1>
+            <TextGenHero />
+            <ChatPromptSection />
+
+
+
+            {/*<AnimatedTextGenHero />*/}
+            <ChatWidget />
         </div>
     );
 }

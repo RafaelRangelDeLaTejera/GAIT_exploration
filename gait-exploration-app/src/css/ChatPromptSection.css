@@ -1,0 +1,10 @@
+.chat-prompt-section-container{
+    /*height: 90vh;*/
+    background-color: pink;
+}
+
+.chat-widget-col{
+    border:  1px solid blue;
+    height: 50vh;
+    background-color: yellow;
+}
