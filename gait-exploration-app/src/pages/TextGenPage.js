@@ -19,10 +19,7 @@ const TextGenPage = () => {
             <TextGenHero />
             <ChatPromptSection />
 
-
-
-            {/*<AnimatedTextGenHero />*/}
-            <ChatWidget />
+            {/*<ChatWidget />*/}
         </div>
     );
 }
