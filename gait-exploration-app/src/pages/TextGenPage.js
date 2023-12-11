@@ -35,7 +35,6 @@ const TextGenPage = ({openAIObj}) => {
     const [promptsloading, setPromptsloading] = useState('')
 
 
-
     const fetchChatGPTStarterPrompt = async () => {
 
         setPromptsloading(true); //TODO: make chatGPT loading wheel
@@ -63,6 +62,7 @@ const TextGenPage = ({openAIObj}) => {
                     }
                 }
                 output[i] = prompt;
+                // output[i] = 'blah'
             }
             catch (e){
                 console.error("Error Occurred, " + e.toString());
@@ -79,8 +79,6 @@ const TextGenPage = ({openAIObj}) => {
             <GlobalNav />
             <TextGenHero />
             <ChatPromptSection prompts={prompts} loading={promptsloading}/>
-
-            <ChatWidget openAI={openAIObj}/>
         </div>
     );
 }

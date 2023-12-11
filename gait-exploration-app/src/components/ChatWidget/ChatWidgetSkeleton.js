@@ -14,7 +14,12 @@ import '/Users/anshulgowda/Documents/CODE/GAIT_exploration/gait-exploration-app/
 import OpenAI from "openai";
 // import OpenAI from "openai";
 
-const ChatWidgetSkeleton = ({prompt, loading}) => {
+const ChatWidgetSkeleton = ({prompt, loading, setConvoPrompt}) => {
+
+    function handleSend(e){
+        setConvoPrompt(prompt);
+        window.scrollTo(0, 2000);
+    }
 
     return(
         <div style={{
@@ -43,7 +48,7 @@ const ChatWidgetSkeleton = ({prompt, loading}) => {
                         paddingLeft: '2vh',
                         borderRadius: '15px',
                         marginTop: '2vh'
-                    }} attachButton={false} sendDisabled={false} disabled={false} placeholder="{Chat GPT Generated text}" value={prompt}/>
+                    }}  onSend={handleSend} attachButton={false} sendDisabled={false} disabled={false} placeholder="{Chat GPT Generated text}" value={prompt}/>
                 </Col>
 
             </Row>

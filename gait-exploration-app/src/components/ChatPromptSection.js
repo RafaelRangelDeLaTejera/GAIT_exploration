@@ -7,10 +7,12 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import chatWidgetSkeleton from "./ChatWidget/ChatWidgetSkeleton";
 import ChatWidgetSkeleton from "./ChatWidget/ChatWidgetSkeleton";
 import OpenAI from "openai";
-
+import ChatWidget from "./ChatWidget/ChatWidget";
 
 
 const ChatPromptSection = ({prompts, loading}) => {
+
+    const [convoPrompt, setConvoPrompt] = useState("");
 
 
     return (
@@ -19,17 +21,20 @@ const ChatPromptSection = ({prompts, loading}) => {
                 <Row style={{ height: '30vh', backgroundColor:'green'}}></Row>
                 <Row style={{ height: '50vh'}}>
                     <Col xs={4} className={'chat-widget-col'}>
-                        <ChatWidgetSkeleton prompt={prompts[0]} loading={loading}/>
+                        <ChatWidgetSkeleton prompt={prompts[0]} loading={loading} setConvoPrompt = {setConvoPrompt}/>
                     </Col>
                     <Col xs={4} className={'chat-widget-col'}>
-                        <ChatWidgetSkeleton prompt={prompts[1]} loading={loading}/>
+                        <ChatWidgetSkeleton prompt={prompts[1]} loading={loading} setConvoPrompt = {setConvoPrompt}/>
                     </Col>
 
                     <Col xs={4} className={'chat-widget-col'}>
-                        <ChatWidgetSkeleton prompt={prompts[2]} loading={loading}/>
+                        <ChatWidgetSkeleton prompt={prompts[2]} loading={loading} setConvoPrompt = {setConvoPrompt}/>
                     </Col>
                 </Row>
                 <Row style={{ height: '30vh', backgroundColor:'green'}}></Row>
+            </Container>
+            <Container>
+                <ChatWidget convoPrompt={convoPrompt}/>
             </Container>
             {/*<Container fluid className={'chat-prompt-section-container'}>*/}
             {/*     <Row style={{ height: '90vh'}}>*/}
