@@ -1,5 +1,5 @@
 import './App.css';
-import React from 'react';
+import React, {useEffect, useRef, useState} from 'react';
 import {
   BrowserRouter as Router,
   Routes,
@@ -10,9 +10,15 @@ import TextGenPage from "./pages/TextGenPage";
 import ImageGenPage from "./pages/ImageGenPage";
 import VideoGenPage from "./pages/VideoGenPage";
 import MusicGenPage from "./pages/MusicGenPage";
+import OpenAI from "openai";
+import {type} from "@testing-library/user-event/dist/type";
+
+
+
 
 
 function App() {
+
   return (
       <Router>
         <div style={{backgroundColor: "#ffffff"}}>

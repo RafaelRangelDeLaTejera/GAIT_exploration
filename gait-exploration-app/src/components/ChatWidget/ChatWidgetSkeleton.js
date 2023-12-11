@@ -12,50 +12,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import '/Users/anshulgowda/Documents/CODE/GAIT_exploration/gait-exploration-app/src/css/ChatWidgetSkeleton.css'
 import OpenAI from "openai";
+// import OpenAI from "openai";
 
-const ChatWidgetSkeleton = () => {
-
-    const openai = new OpenAI({
-        apiKey: process.env.REACT_APP_OPENAI_API_KEY,
-        dangerouslyAllowBrowser: true,
-    });
-
-    const [prompt, setPrompt] = useState('');
-    const [apiResponse, setApiResponse] = useState('');
-    const [loading, setLoading] = useState('')
-
-    const fetchChatGPTStarterPrompt = async () => {
-        setPrompt('');
-        console.log('new fetchStarterPrompt instantiated')
-        setLoading(true); //TODO: make chatGPT loading wheel
-        try{
-            const stream = await openai.chat.completions.create({
-                model: "gpt-3.5-turbo",
-                messages: [{"role": "user", "content": 'Generate a single, clear sample prompt for a beginner to initiate a conversation with ChatGPT. This prompt should only be one sentence long and should be about an interesting topic. Provide only the prompt text without any additional explanation, filler words, or acknowledgements, and make sure to use proper grammar and punctuation.'}],
-                stream: true,
-            });
-
-            for await(const chunk of stream){
-                if(chunk.choices && chunk.choices[0] && chunk.choices[0].delta && chunk.choices[0].delta.content) {
-                    setPrompt(prev => prev + chunk.choices[0].delta.content);
-                    console.log(prompt);
-                }
-            }
-
-        }
-        catch (e){
-            console.error("Error Occurred, " + e.toString())
-        }
-        finally {
-            setLoading(false);
-            console.log('final prompt: ' + prompt.toString());
-        }
-    }
-
-    useEffect(() => {
-        fetchChatGPTStarterPrompt()
-    }, []);
-
+const ChatWidgetSkeleton = ({prompt, loading}) => {
 
     return(
         <div style={{
@@ -67,7 +26,7 @@ const ChatWidgetSkeleton = () => {
                         borderRadius:'15px',
                     }}>
                         <Avatar src={'/display-pic.png'} name="Chat GPT" status="available"/>
-                        <ConversationHeader.Content style={{maxWidth:'inherit', overflowWrap: 'break-word'}} userName="{Chat GPThkjhkl Conversation Description}" info="Active" />
+                        <ConversationHeader.Content style={{maxWidth:'inherit', overflowWrap: 'break-word'}} userName="{Chat GPT Conversation Description}" info="Active" />
                         <ConversationHeader.Actions>
                             {/*<InfoButton />*/}
                         </ConversationHeader.Actions>
@@ -75,7 +34,7 @@ const ChatWidgetSkeleton = () => {
                 </Col>
                 {/**/}
                 <Col xs={12}>
-                    {loading && <TypingIndicator content="ChatGPT is thinking" />}
+                    {loading && <TypingIndicator content="ChatGPT is thinking ..." />}
                     <MessageInput style={{
                         width: 'fit-content',
                         height: '20vh',
@@ -84,7 +43,7 @@ const ChatWidgetSkeleton = () => {
                         paddingLeft: '2vh',
                         borderRadius: '15px',
                         marginTop: '2vh'
-                    }} attachButton={false} placeholder="{Chat GPT Generated text}" value={prompt}/>
+                    }} attachButton={false} sendDisabled={false} disabled={false} placeholder="{Chat GPT Generated text}" value={prompt}/>
                 </Col>
 
             </Row>

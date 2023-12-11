@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
@@ -6,22 +6,27 @@ import '../css/ChatPromptSection.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import chatWidgetSkeleton from "./ChatWidget/ChatWidgetSkeleton";
 import ChatWidgetSkeleton from "./ChatWidget/ChatWidgetSkeleton";
+import OpenAI from "openai";
 
-const ChatPromptSection = () => {
+
+
+const ChatPromptSection = ({prompts, loading}) => {
+
+
     return (
         <div>
             <Container fluid className={'chat-prompt-section-container'}>
                 <Row style={{ height: '30vh', backgroundColor:'green'}}></Row>
                 <Row style={{ height: '50vh'}}>
                     <Col xs={4} className={'chat-widget-col'}>
-                        <ChatWidgetSkeleton />
+                        <ChatWidgetSkeleton prompt={prompts[0]} loading={loading}/>
                     </Col>
                     <Col xs={4} className={'chat-widget-col'}>
-                        <ChatWidgetSkeleton />
+                        <ChatWidgetSkeleton prompt={prompts[1]} loading={loading}/>
                     </Col>
 
                     <Col xs={4} className={'chat-widget-col'}>
-                        <ChatWidgetSkeleton/>
+                        <ChatWidgetSkeleton prompt={prompts[2]} loading={loading}/>
                     </Col>
                 </Row>
                 <Row style={{ height: '30vh', backgroundColor:'green'}}></Row>
