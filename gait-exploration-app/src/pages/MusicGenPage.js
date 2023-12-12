@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import { Link } from "react-router-dom"
 import GlobalNav from "../components/Global_Nav";
-
+import MusicGen from "../components/MusicGen";
 
 const MusicGenPage = () => {
 
@@ -12,7 +12,9 @@ const MusicGenPage = () => {
     return (
         <div >
             <GlobalNav />
-            <h1>Image Generation</h1>
+            <h1>Music Generation</h1>
+            <MusicGen/>
+
         </div>
     );
 }
