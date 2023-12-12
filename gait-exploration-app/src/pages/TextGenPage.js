@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 import GlobalNav from "../components/Global_Nav";
 import ChatWidget from "../components/ChatWidget/ChatWidget";
 import TextGenHero from "../components/TextGenHero";
-import ChatPromptSection from "../components/ChatPromptSection";
+import ChatPromptSection from "../components/ChatPromptSection 1";
 import OpenAI from "openai";
 
 

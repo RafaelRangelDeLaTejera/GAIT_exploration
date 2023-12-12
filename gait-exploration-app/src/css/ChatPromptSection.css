@@ -1,10 +1,32 @@
-.chat-prompt-section-container{
-    /*height: 90vh;*/
-    background-color: pink;
+/* ChatPromptSection.css */
+
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.chat-prompt-section-container {
+    background-color: #b3e0f2;
 }
 
-.chat-widget-col{
-    border:  1px solid blue;
+.chat-widget-col {
+    border: 2px solid #8ac6e0; /* Adjusted border thickness */
     height: 50vh;
-    background-color: yellow;
+    background-color: #b3e0f2;
+}
+
+.intro-text-row {
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.intro-text {
+    font-size: 1.2rem;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+.bottom-row {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 2rem;
+    background-color: #b3e0f2;
+    font-family: 'Plus Jakarta Sans', sans-serif;
 }

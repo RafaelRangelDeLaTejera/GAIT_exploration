@@ -1,42 +1,27 @@
-import React, {useEffect, useRef, useState} from 'react';
-
-
-import styles from "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";
-import {
-    ConversationHeader,
-    Avatar,
-    MessageInput,
-    TypingIndicator,
-} from "@chatscope/chat-ui-kit-react";
+import React, { useEffect, useRef, useState } from 'react';
+import { ConversationHeader, Avatar, MessageInput, TypingIndicator } from "@chatscope/chat-ui-kit-react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import '../../css/ChatWidgetSkeleton.css'
-// import OpenAI from "openai";
+import '../../css/ChatWidgetSkeleton.css'; // Import your CSS file
 
-const ChatWidgetSkeleton = ({prompt, loading, setConvoPrompt}) => {
-
-    function handleSend(e){
+const ChatWidgetSkeleton = ({ prompt, loading, setConvoPrompt }) => {
+    function handleSend(e) {
         setConvoPrompt(prompt);
         window.scrollTo(0, 2000);
     }
 
-    return(
-        <div style={{
-            height: "500px"
-        }}>
-            <Row style={{justifyContent:'center'}}>
-                <Col xs={12} className={'textgen-prompt-header-col'}>
-                    <ConversationHeader style={{
-                        borderRadius:'15px',
-                    }}>
-                        <Avatar src={'/display-pic.png'} name="Chat GPT" status="available"/>
-                        <ConversationHeader.Content style={{maxWidth:'inherit', overflowWrap: 'break-word'}} userName="{Chat GPT Conversation Description}" info="Active" />
+    return (
+        <div className="chat-widget-skeleton">
+            <Row style={{ justifyContent: 'center' }}>
+                <Col xs={12} className="textgen-prompt-header-col">
+                    <ConversationHeader style={{ borderRadius: '15px' }}>
+                        <Avatar src={'/display-pic.png'} name="Chat GPT" status="available" />
+                        <ConversationHeader.Content style={{ maxWidth: 'inherit', overflowWrap: 'break-word' }} userName="{Chat GPT Conversation Description}" info="Active" />
                         <ConversationHeader.Actions>
-                            {/*<InfoButton />*/}
+                            {/* ... (any additional actions) */}
                         </ConversationHeader.Actions>
                     </ConversationHeader>
                 </Col>
-                {/**/}
                 <Col xs={12}>
                     {loading && <TypingIndicator content="ChatGPT is thinking ..." />}
                     <MessageInput style={{
@@ -47,21 +32,9 @@ const ChatWidgetSkeleton = ({prompt, loading, setConvoPrompt}) => {
                         paddingLeft: '2vh',
                         borderRadius: '15px',
                         marginTop: '2vh'
-                    }}  onSend={handleSend} attachButton={false} sendDisabled={false} disabled={false} placeholder="{Chat GPT Generated text}" value={prompt}/>
+                    }} onSend={handleSend} attachButton={false} sendDisabled={false} disabled={false} placeholder="{Chat GPT Generated text}" value={prompt} />
                 </Col>
-
             </Row>
-            {/*<ChatContainer>*/}
-            {/*    <ConversationHeader>*/}
-            {/*        <Avatar src={'/display-pic.png'} name="Chat GPT" status="available"/>*/}
-            {/*        <ConversationHeader.Content userName="{Chat GPT Conversation Description}" info="Active" />*/}
-            {/*        <ConversationHeader.Actions>*/}
-            {/*            /!*<InfoButton />*!/*/}
-            {/*        </ConversationHeader.Actions>*/}
-            {/*    </ConversationHeader>*/}
-            {/*    <br style={{backgroundColor: "white"}}/>*/}
-            {/*    <MessageInput attachButton={false} placeholder="{Chat GPT Generated text}" />*/}
-            {/*</ChatContainer>*/}
         </div>
     );
 }
