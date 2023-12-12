@@ -1,0 +1,38 @@
+.textgen-hero-col-top{
+    /*width: 110vw;*/
+    height: 15vh;
+    position: relative;
+    background-color: yellow;
+}
+
+.textgen-hero-col-left{
+    /*width: 10vw;*/
+    background-color: black;
+}
+
+.textgen-hero-col-title{
+    width: 80vw !important;
+    height: 35vh;
+    background-color: orange !important;
+}
+
+.textgen-hero-col-right{
+    /*width: 20vw;*/
+    background-color: green;
+}
+
+
+
+.textgen-hero-col-bottom{
+    /*width: 100vw;*/
+    height: 40vh;
+    position: relative;
+    background-color: blue;
+
+}
+
+.textgen-hero-container{
+    width: 100vw;
+    height: 82vh;
+    overflow: hidden;
+}
