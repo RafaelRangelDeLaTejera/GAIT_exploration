@@ -6,7 +6,7 @@ import '../css/ChatPromptSection.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import chatWidgetSkeleton from "./ChatWidget/ChatWidgetSkeleton";
 import ChatWidgetSkeleton from "./ChatWidget/ChatWidgetSkeleton";
-import OpenAI from "openai";
+//import OpenAI from "openai";
 import ChatWidget from "./ChatWidget/ChatWidget";
 
 

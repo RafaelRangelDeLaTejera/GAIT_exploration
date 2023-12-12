@@ -11,7 +11,6 @@ import {
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import '../../css/ChatWidgetSkeleton.css'
-import OpenAI from "openai";
 // import OpenAI from "openai";
 
 const ChatWidgetSkeleton = ({prompt, loading, setConvoPrompt}) => {

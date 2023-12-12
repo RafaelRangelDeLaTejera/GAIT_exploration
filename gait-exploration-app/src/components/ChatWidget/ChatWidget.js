@@ -1,7 +1,8 @@
+
 import React, {useEffect, useRef, useState} from 'react';
 import { Link } from "react-router-dom"
 import OpenAI from 'openai';
-// require('dotenv').config()
+
 
 
 import styles from "@chatscope/chat-ui-kit-styles/dist/default/styles.min.css";

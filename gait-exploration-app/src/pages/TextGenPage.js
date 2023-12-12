@@ -1,3 +1,5 @@
+
+
 import React, {useEffect, useRef, useState} from 'react';
 import { Link } from "react-router-dom"
 import GlobalNav from "../components/Global_Nav";
@@ -5,7 +7,6 @@ import ChatWidget from "../components/ChatWidget/ChatWidget";
 import TextGenHero from "../components/TextGenHero";
 import ChatPromptSection from "../components/ChatPromptSection";
 import OpenAI from "openai";
-
 
 
 const TextGenPage = ({openAIObj}) => {
