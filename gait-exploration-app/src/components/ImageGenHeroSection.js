@@ -20,7 +20,7 @@ const ImageGenHeroSection = () => {
                 <Row style={{backgroundColor: "darkslategray"}}>
                     <Col xs={2}></Col>
                     <Col xs={8} className={"Title"} style={{padding: "1%"}}>
-                        <p >Welcome to image generation</p>
+                        <p >Welcome to Image Generation</p>
                     </Col>
                     <Col xs={2}></Col>
 

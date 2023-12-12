@@ -38,7 +38,7 @@ const ImageGen = () => {
             <Col md={12} className="CostumCol">
                 <Form style={{ width: '50%', padding: '20px'  }}>
                     <Form.Group controlId="formPrompt" style={{ marginBottom: '10px' }}>
-                        <Form.Label className="text-image-gen">Enter a prompt:</Form.Label>
+                        <Form.Label className="text-image-gen" style={{color:"beige"}}>Enter a prompt:</Form.Label>
                         <Form.Control
                             type="text"
                             placeholder="e.g., dog jumping over a cat"
