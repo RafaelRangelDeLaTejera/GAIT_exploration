@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import GlobalNav from "../components/Global_Nav";
 import { Link } from "react-router-dom"
-
+import TextGenPage from "./TextGenPage";
 
 function Home() {
     useEffect(() => {
@@ -10,8 +10,7 @@ function Home() {
 
     return (
         <div >
-            <GlobalNav />
-            <h1>HomePage</h1>
+            <TextGenPage></TextGenPage>
         </div>
     );
 }
