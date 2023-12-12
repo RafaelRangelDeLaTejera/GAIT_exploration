@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.CostumCol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkslategray;
+}
+
+.text-image-gen {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-weight: bold;
+    color: white;
+    font-size: 5vh;
+}
+
+.image-column {
+    display: flex;
+    justify-content: center;
+    background-color: darkslategray;
+    height: 60vh;
+}
+.image-gen-text-field{
+    border-radius: 40px;
+    background-color: beige;
+    height: 10vh;
+}
+
+.image-gen-button {
+    background-color: darkorange;
+    font-weight: bold;
+    border-style: solid;
+    border-color: white;
+    color: darkslategray;
+    border-radius: 20px;
+}
+
+.image-gen-button:hover{
+    background-color: #ee7214;
+    border-style: solid;
+    border-width: 1px;
+    border-color: white;
+}
