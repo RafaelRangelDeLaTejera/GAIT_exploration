@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.main-music-gen{
+    font-family: "Plus Jakarta Sans", sans-serif;
+    background-color: darkslategray;
+    color: whitesmoke;
+}
+.main-row-music-gen{
+    min-height: 85vh;
+    height: 55vh;
+}
+.form-music{
+
+}
+.input-music-gen{
+    outline: 3px solid beige;
+    border: 3px solid darkslategray;
+    width: 30vw;
+    min-width: 30vw;
+    height: 20vh;
+    border-radius: 10vh;
+    align-self: flex-end;
+    resize: none;
+    overflow-y: auto;
+    padding: 5px;
+    font-weight: 800;
+    font-size: 20px;
+    text-align: center;
+    color: darkslategray;
+    transition: ease-in-out 0.1s;
+    background-color: beige;
+}
+.input-button-music{
+    align-self: flex-end;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    border: none;
+    background-color: orange;
+    color: darkslategray;
+    font-weight: 700;
+    outline: none;
+
+    transition: ease-in-out 0.1s;
+
+}
+.input-button-music:hover{
+    border: none;
+    background-color: orange;
+    outline: 5px solid whitesmoke;
+    color: whitesmoke;
+
+}
+
+.input-music-gen:hover{
+    border: 3px solid orange;
+    color: darkslategray;
+}
+
+.input-col-music-gen{
+
+    padding-top: 10vh;
+    height: 50vh;
+
+}
+.results-col-music-gen{
+
+    height: 35vh;
+}

@@ -12,7 +12,7 @@ const MusicGenPage = () => {
     return (
         <div >
             <GlobalNav />
-            <h1>Music Generation</h1>
+
             <MusicGen/>
 
         </div>
