@@ -7,6 +7,9 @@ import Button from "react-bootstrap/Button";
 import {Col} from "react-bootstrap";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
+import "bootstrap-icons/font/bootstrap-icons.css";
+import AudioPlayer from 'react-h5-audio-player';
+import 'react-h5-audio-player/lib/styles.css';
 const MusicGen = () => {
     const [textInput, setTextInput] = useState('');
     const [musicPath, setMusicPath] = useState('');
@@ -27,8 +30,8 @@ const MusicGen = () => {
 
     return (
         <div>
-            <MusicGenHero></MusicGenHero>
-            <MusicGenExplanationSection></MusicGenExplanationSection>
+            <MusicGenHero/>
+            <MusicGenExplanationSection/>
             <Container fluid className = {'main-music-gen'}>
                 <Row className={'main-row-music-gen'}>
                     <Col xs = {12} className={'d-flex align-items-center justify-content-center'} style={{height:"50vh"}}>
@@ -40,21 +43,27 @@ const MusicGen = () => {
                                 placeholder="e.g. Latin Music"
                                 className={'input-music-gen'}
                             />
-                            <Button variant = "primary" type="submit" className={'input-button-music'}>Generate Music</Button>
+                            <Button variant = "primary" type="submit" className={'input-button-music'}>
+                                <i className="bi bi-send-fill" style={{color:"beige",fontSize:"8vh",alignSelf:"center"}}/>
+                            </Button>
                         </form>
 
                     </Col>
-                    <Col xs = {12} className={'d-flex align-items-center justify-content-center'} style={{height:"20vh",paddingBottom:"20vh"}}>
                         {isLoading ? (
-                            <div style={{fontWeight:"800",fontSize:"40px"}}>Loading...</div>
+                            <Col xs = {12} className={'d-flex align-items-center justify-content-center'} style={{height:"20vh",paddingBottom:"20vh"}}>
+                                <div style={{fontWeight:"800",fontSize:"40px",color:"beige"}}>Loading...</div>
+                            </Col>
                         ) : (musicPath && (
-                            <div>
-                                <audio controls src={musicPath} style={{width:"35vw",}}>
-                                    Your browser does not support the audio element.
-                                </audio>
-                            </div>
+                            <Col xs = {12} className={'d-flex align-items-center justify-content-center'} style={{height:"20vh",paddingBottom:"20vh"}}>
+                                <div>
+                                    <p style={{textAlign:"center",fontWeight:"800",fontSize:"30px",color:"beige",marginBottom:"2vh",marginTop:"12vh"}}>Your Music:)</p>
+                                    <AudioPlayer src={musicPath} style={{width:"35vw",backgroundColor:"beige",borderRadius:"10px"}}>
+                                        Your browser does not support the audio element.
+                                    </AudioPlayer>
+                                </div>
+                            </Col>
+
                         ))}
-                    </Col>
                 </Row>
 
             </Container>

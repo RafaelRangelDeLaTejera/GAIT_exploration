@@ -6,8 +6,8 @@
     color: whitesmoke;
 }
 .main-row-music-gen{
-    min-height: 85vh;
-    height: 55vh;
+    max-height: 85vh;
+    display: inline;
 }
 .form-music{
 
@@ -15,7 +15,7 @@
 .input-music-gen{
     outline: 3px solid beige;
     border: 3px solid darkslategray;
-    width: 30vw;
+    width: 40vw;
     min-width: 30vw;
     height: 20vh;
     border-radius: 10vh;
@@ -31,6 +31,10 @@
     background-color: beige;
 }
 .input-button-music{
+    outline: 3px solid orange;
+    width: 20vh;
+    height: 20vh;
+    border-radius: 50%;
     align-self: flex-end;
     margin-top: 10px;
     margin-left: 20px;
@@ -39,21 +43,24 @@
     background-color: orange;
     color: darkslategray;
     font-weight: 700;
-    outline: none;
 
     transition: ease-in-out 0.1s;
 
 }
+.bi-send-fill{
+    color: beige;
+
+}
 .input-button-music:hover{
-    border: none;
+
     background-color: orange;
-    outline: 5px solid whitesmoke;
+    border: 5px solid whitesmoke;
     color: whitesmoke;
 
 }
 
 .input-music-gen:hover{
-    border: 3px solid orange;
+    border: 5px solid orange;
     color: darkslategray;
 }
 
