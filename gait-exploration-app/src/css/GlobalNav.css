@@ -11,7 +11,7 @@
 
 /* Style for the brand and navigation links */
 .nav-link {
-    color: white !important;
+    color: beige !important;
     font-size: 1.5vw;
     padding-right: 2vw;
     padding-left: 2vw;
@@ -32,7 +32,7 @@
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 600;
     font-size: 1.5vw;
-    color: white;
+    color: beige;
     padding-left: 2vw;
     padding-right: 1vw;
     margin-right: 17vw;
@@ -40,8 +40,8 @@
 
 
 #navbar {
-    background-color: #527853 !important; /* Set background color to black */
-    border-bottom: 5px solid #EE7214; /* Highlight color bottom border */
+    background-color: darkslategrey !important; /* Set background color to black */
+    border-bottom: 5px solid darkorange; /* Highlight color bottom border */
     padding: 20px 0; /* Increase vertical padding to make navbar taller */
 
 }

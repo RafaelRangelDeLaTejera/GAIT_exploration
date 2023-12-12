@@ -12,7 +12,7 @@ const VideoGenPage = () => {
     return (
         <div >
             <GlobalNav />
-            <h1>Video Generation</h1>
+            <h1>Video Generation Development in progress...                :)</h1>
         </div>
     );
 }
