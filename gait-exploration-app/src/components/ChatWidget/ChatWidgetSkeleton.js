@@ -10,7 +10,7 @@ import {
 } from "@chatscope/chat-ui-kit-react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import '/Users/anshulgowda/Documents/CODE/GAIT_exploration/gait-exploration-app/src/css/ChatWidgetSkeleton.css'
+import '../../css/ChatWidgetSkeleton.css'
 import OpenAI from "openai";
 // import OpenAI from "openai";
 
