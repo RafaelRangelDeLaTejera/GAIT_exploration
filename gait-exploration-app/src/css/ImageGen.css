@@ -16,9 +16,10 @@
 
 .image-column {
     display: flex;
+    padding-top: 10vh;
     justify-content: center;
     background-color: darkslategray;
-    height: 60vh;
+    height: 100vh;
 }
 .image-gen-text-field{
     border-radius: 40px;

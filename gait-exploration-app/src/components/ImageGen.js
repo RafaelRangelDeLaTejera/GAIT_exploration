@@ -57,8 +57,8 @@ const ImageGen = () => {
                 {isLoading ? (
                     <p style={{textAlign:"center",fontWeight:"800",fontSize:"30px",color:"beige",marginBottom:"2vh",marginTop:"12vh"}}>Loading...</p>
                 ) : (imageUrl && (
-                    <div >
-                        <Image src={imageUrl} alt="Generated Image" fluid style={{ maxWidth: '400px', height: 'auto', alignContent: 'center' }}/>
+                    <div style={{}}>
+                        <Image src={imageUrl} alt="Generated Image" fluid style={{ borderRadius:"3vw",outline:"10px solid darkorange",maxWidth: '400px', height: 'auto', alignContent: 'center' }}/>
                     </div>
                 ))}
             </Col>
