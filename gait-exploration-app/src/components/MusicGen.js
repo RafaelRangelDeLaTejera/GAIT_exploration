@@ -56,7 +56,7 @@ const MusicGen = () => {
                         ) : (musicPath && (
                             <Col xs = {12} className={'d-flex align-items-center justify-content-center'} style={{height:"20vh",paddingBottom:"20vh"}}>
                                 <div>
-                                    <p style={{textAlign:"center",fontWeight:"800",fontSize:"30px",color:"beige",marginBottom:"2vh",marginTop:"12vh"}}>Your Music:)</p>
+                                    <p style={{textAlign:"center",fontWeight:"800",fontSize:"30px",color:"beige",marginBottom:"2vh",marginTop:"12vh"}}>Your Music :)</p>
                                     <AudioPlayer src={musicPath} style={{width:"35vw",backgroundColor:"beige",borderRadius:"10px"}}>
                                         Your browser does not support the audio element.
                                     </AudioPlayer>
