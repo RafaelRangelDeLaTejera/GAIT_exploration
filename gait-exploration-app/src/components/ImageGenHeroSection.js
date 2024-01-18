@@ -18,11 +18,11 @@ const ImageGenHeroSection = () => {
         <div >
             <Container fluid>
                 <Row style={{backgroundColor: "darkslategray"}}>
-                    <Col xs={2}></Col>
+                    <Col xs={2}/>
                     <Col xs={8} className={"Title"} style={{padding: "1%"}}>
-                        <p >Welcome to Image Generation</p>
+                        <p >Image Generation</p>
                     </Col>
-                    <Col xs={2}></Col>
+                    <Col xs={2}/>
 
                     <Col xs={12} className="Description" style={{padding: "1%"}}>
                         <p style={{width:"80vw"}}>Go crazy with our image generation application, here you can let

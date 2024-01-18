@@ -57,8 +57,13 @@
 
     background-color: darkorange;
     border: 5px solid whitesmoke;
-    color: whitesmoke;
+    color: beige;
 
+}
+.input-button-music:active{
+    background-color: darkorange;
+    border: 5px solid whitesmoke;
+    color: beige;
 }
 
 .input-music-gen:hover{
