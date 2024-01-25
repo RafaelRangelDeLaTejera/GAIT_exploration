@@ -16,7 +16,7 @@ const ChatWidgetSkeleton = ({ prompt, loading, setConvoPrompt }) => {
                 <Col xs={12} className="textgen-prompt-header-col">
                     <ConversationHeader style={{ borderRadius: '15px' }}>
                         <Avatar src={'/display-pic.png'} name="Chat GPT" status="available" />
-                        <ConversationHeader.Content style={{ maxWidth: 'inherit', overflowWrap: 'break-word' }} userName="{Chat GPT Conversation Description}" info="Active" />
+                        <ConversationHeader.Content style={{ maxWidth: 'inherit', overflowWrap: 'break-word' }} userName="Chat GPT Friend" info="Active" />
                         <ConversationHeader.Actions>
                             {/* ... (any additional actions) */}
                         </ConversationHeader.Actions>
