@@ -43,7 +43,7 @@ that are only limited by your imagination!
 
 ### Music Generation: 
 Immerse yourself in the world of AI-created music. Our backend Node.js server integrates with Facebook's MusicGen model to generate mesmerizing audio compositions in real-time, 
-allowing you to download and listen to .mp3 files directly through our built-in music player.
+allowing you to download and listen to .wav files directly through our built-in music player.
 <br />
 <br />
 <img width="420" alt="Screen Shot 2024-01-25 at 3 19 37 PM" src="https://github.com/RafaelRangelDeLaTejera/GAIT_exploration/assets/72891464/f4f5ff74-dc49-4d01-b834-975a8837b6d2">
