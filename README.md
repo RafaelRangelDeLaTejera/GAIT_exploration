@@ -37,6 +37,7 @@ Dive into the realm of visual creativity with AI-generated images. We use OpenAI
 that are only limited by your imagination!
 <br />
 <br />
+<img width="500" alt="ImageGenHeroSection" src="https://github.com/RafaelRangelDeLaTejera/GAIT_exploration/assets/72891464/f6e5a976-c3a9-48cd-b028-18fe1e451d05">
 <img width="420" alt="Screen Shot 2024-01-25 at 3 19 15 PM" src="https://github.com/RafaelRangelDeLaTejera/GAIT_exploration/assets/72891464/e8e604e0-0629-44f9-9850-81c4caa0ae08">
 <img width="420" alt="Screen Shot 2024-01-25 at 3 19 27 PM" src="https://github.com/RafaelRangelDeLaTejera/GAIT_exploration/assets/72891464/0e0d03bf-72b3-4f67-b3de-4649e958794f">
 
@@ -47,6 +48,8 @@ allowing you to download and listen to .mp3 files directly through our built-in 
 <br />
 <img width="420" alt="Screen Shot 2024-01-25 at 3 19 37 PM" src="https://github.com/RafaelRangelDeLaTejera/GAIT_exploration/assets/72891464/f4f5ff74-dc49-4d01-b834-975a8837b6d2">
 <img width="420" alt="Screen Shot 2024-01-25 at 3 19 59 PM" src="https://github.com/RafaelRangelDeLaTejera/GAIT_exploration/assets/72891464/b335c1a0-af7c-4f2a-8b80-0818932e6bda">
+<img width="420" alt="MusicGenAfter" src="https://github.com/RafaelRangelDeLaTejera/GAIT_exploration/assets/72891464/2c769b85-87ee-4ef8-b6bc-dc5d263dfc53">
+
 
 ## How it Works:
 
