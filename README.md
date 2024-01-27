@@ -7,6 +7,20 @@ Welcome to the Generative AI Sandbox, a React.js web application designed to int
 This user-friendly web app provides an interactive and guided experience for users interested in exploring text generation, 
 image generation, and even music generation, all without requiring any login, making it accessible to everyone, regardless of technical expertise.
 
+## Table of Contents
+
+- Schematic
+- Features
+  - Text Generation
+  - Image Generation
+  - Video Generation
+- How it Works
+- Contributors
+- Get in Contact
+
+## Schematic:
+<img width="1000" alt="GAIT_exploration_schematic" src="https://github.com/RafaelRangelDeLaTejera/GAIT_exploration/assets/72891464/b8203ed0-9841-42f4-be7a-1c5d5d67825e">
+
 
 ## Features:
 
