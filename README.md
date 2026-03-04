@@ -63,13 +63,13 @@ composition and delivery.The result is a harmonious blend of technology and arti
 Whether you're a curious newcomer or a seasoned enthusiast, the Generative AI Sandbox is your gateway to the endless possibilities of AI creativity. Get started today and explore the magic of AI-driven generative art and music.
 
 ## Contributors
-This project was developed and is currently maintained by Joseph Bart, Anshul Gowda, Rafa Ragel de la Tejera, and Gokul Thangavel! This was a labor of love, and we truly hope that we 
+This project was developed and is currently maintained by Joseph Bartoszczyk, Anshul Gowda, Rafa Ragel de la Tejera, and Gokul Thangavel! This was a labor of love, and we truly hope that we 
 can get more people interested and well-versed in the AI space!
 
 ## Get in Contact:
  [Anshul Gowda's LinkedIn](https://www.linkedin.com/in/anshul-gowda)
 <br />
-Joseph Bart's LinkedIn
+Joseph Bartoszczyk's LinkedIn
 <br />
 Rafa Rangel de la Tejera's LinkedIn
 <br />
